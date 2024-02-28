@@ -19,8 +19,8 @@ const LoginForm = () => {
   }
 
   return (
-    <div>
-      <h1>Login</h1>
+    <section className="animeLeft">
+      <h1 className="title">Login</h1>
       <form action="" onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
@@ -32,7 +32,7 @@ const LoginForm = () => {
         {error && <p>{error}</p>}
       </form>
       <Link to="/login/criar">Cadastros</Link>
-    </div>
+    </section>
   );
 };
 
