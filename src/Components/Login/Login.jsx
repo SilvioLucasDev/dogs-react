@@ -1,17 +1,16 @@
-import React from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
-import LoginForm from './LoginForm';
-import LoginCreate from './LoginCreate';
-import LoginRecovery from './LoginRecovery';
-import LoginRestart from './LoginRestart';
-import { UserContext } from '../../Contexts/UserContext';
-import styles from './Login.module.css';
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import LoginForm from "./LoginForm";
+import LoginCreate from "./LoginCreate";
+import LoginRecovery from "./LoginRecovery";
+import LoginRestart from "./LoginRestart";
+import { UserContext } from "../../Contexts/UserContext";
+import styles from "./Login.module.css";
 
 const Login = () => {
   const { login } = React.useContext(UserContext);
-  const navigate = useNavigate();
 
-  if (login === true) navigate('/conta');
+  if (login === true) return <Navigate to="/conta" />;
 
   return (
     <section className={styles.login}>
