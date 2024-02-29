@@ -10,7 +10,7 @@ import stylesBtn from "../Forms/Button.module.css";
 
 const LoginForm = () => {
   const username = useForm();
-  const password = useForm();
+  const password = useForm("password");
 
   const { userLogin, error, loading } = React.useContext(UserContext);
 
