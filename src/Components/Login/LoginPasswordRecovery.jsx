@@ -4,6 +4,7 @@ import Error from "../Helpers/Error";
 import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
 import { PASSWORD_RECOVERY } from "../../api";
+import Head from "../Helpers/Head";
 
 const LoginPasswordRecovery = () => {
   const login = useForm();
@@ -23,6 +24,7 @@ const LoginPasswordRecovery = () => {
 
   return (
     <section>
+      <Head title="Perdeu a senha" />
       <h1 className="title">Perdeu a senha?</h1>
       {data ? (
         <p>{data}</p>
