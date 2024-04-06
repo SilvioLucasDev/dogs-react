@@ -1,8 +1,18 @@
-# React + Vite
+# dogs-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dogs é uma rede social de cachorros feita em React. Com Dogs, os usuários podem criar uma conta, fazer login, compartilhar postagens e interagir por meio de comentários. Além disso, o projeto oferece recursos como scroll infinito e estatísticas sobre as fotos compartilhadas pelos usuários.
 
-Currently, two official plugins are available:
+<div align="center">
+  <h3>Tela de Login</h3>
+  <img src="./docs/login.png" alt="Tela de Login" width="500"/>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
+  <h3>Feed</h3>
+  <img src="./docs/feed.png" alt="Feed" width="500"/>
+</div>
+
+<div align="center">
+  <h3>Estatísticas</h3>
+  <img src="./docs/stats.png" alt="Estatísticas" width="500"/>
+</div>
